@@ -74,7 +74,7 @@ export const UploaderSection = ({
             <input ref={inputRef} type="file" onChange={handleChange} className="hidden" />
             <input ref={watermarkRef} type="file" onChange={handleWMChange} className="hidden" />
             {
-              true ? 
+              file ? 
               (
                 <>
                   <div>{file?.name || "Your video is uploaded"}</div>
